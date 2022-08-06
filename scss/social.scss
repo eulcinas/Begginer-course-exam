@@ -1,0 +1,40 @@
+#social {
+   width: 100%;
+   height: auto;
+   background: $white;
+   display: flex;
+   align-items: center;
+   margin: auto;
+ 
+   .socialLeft {
+     width: 50%;
+     text-align: justify;
+     padding: 0px 150px;
+ 
+     h3 {
+       padding-top: 10px;
+       padding-bottom: 5px;
+     }
+ 
+     p {
+      width: 100%;
+      height: auto;
+       padding-bottom: 10px;
+       font-size: 0.8em;
+       line-height: 15px;
+       color: #b8b8ba;
+     }
+   }
+ 
+   .socialRight {
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+ 
+     img {
+       width: 6%;
+       margin: auto;
+     }
+   }
+ }

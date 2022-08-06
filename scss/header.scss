@@ -1,0 +1,42 @@
+header {
+  background: $dark;
+  max-width: 1400px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .headerLeft {
+    width: 40%;
+
+    #logo1 {
+      width: 20%;
+    }
+  }
+
+  .headerRight {
+    width: 60%;
+
+    nav a {
+      width: 60%;
+      height: 80px;
+      color: $white;
+      text-decoration: none;
+      justify-content: space-between;
+      padding:0 20px;
+      opacity: 0.5;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      border-bottom: 3px solid $orange;
+    }
+  }
+}

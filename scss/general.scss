@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1400px;
+  background: $white;
+  text-align: center;
+  margin: auto;
+}

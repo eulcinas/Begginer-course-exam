@@ -1,0 +1,143 @@
+#pricing {
+   width: 100%;
+   height: auto;
+   background: $blue;
+   padding-top: 80px;
+   padding-bottom: 80px;
+ 
+   h2 {
+     color: $white;
+     padding-top: 20px;
+     padding-bottom: 30px;
+     font-size: 1.7em;
+     font-weight: 600;
+   }
+ 
+   .greenLine {
+     width: 70px;
+     background: $green;
+     border: 1px solid $green;
+     margin: auto;
+   }
+ 
+   p {
+     color: $white;
+     padding-top: 30px;
+     opacity: 0.8;
+     font-size: 0.7em;
+   }
+ 
+     /* Swiper css */
+ 
+     .swiper {
+     margin-top: 50px;
+     max-width: 350px;
+     width: 100%;
+     text-align: center;
+ 
+     .swiper-wrapper {
+       display: flex;
+       align-items: center;
+ 
+       .plan {
+         width: 350px;
+         margin: auto;
+         border-radius: 5px;
+         overflow: hidden;
+ 
+         .plan-top {
+           background: $darkgrey;
+           color: $white;
+           padding-top: 10px;
+           padding-bottom: 15px;
+ 
+           h3 {
+             font-weight: 400;
+             opacity: 0.8;
+             padding-top: 10px;
+           }
+ 
+           .price {
+             font-size: 5em;
+             opacity: 1;
+ 
+             span {
+               font-size: 0.4em;
+             }
+           }
+         }
+ 
+         .plan-green {
+           background: $green;
+           border: 4px solid $green;
+           color: $white;
+           line-height: 30px;
+         }
+ 
+         p {
+           font-size: 0.8em;
+         }
+ 
+         .features {
+           list-style-type: none;
+           background: $white;
+ 
+           li {
+             color: rgba(128, 128, 128, 0.75);
+             line-height: 35px;
+             text-transform: uppercase;
+             font-size: 0.8em;
+           }
+         }
+ 
+       }
+     }
+ 
+     .swiper-pagination-bullets {
+       position: relative;
+       margin-top: 15px;
+     }
+   
+     .swiper-pagination-bullet {
+       background: grey;
+       border: 3px solid $green;
+       width: 10px;
+       height: 10px;
+       transition: 0.3s;
+     }
+   
+     .swiper-pagination-bullet-active {
+       background: $green;
+     }
+   
+     .swiper-button-prev,
+     .swiper-button-next {
+       color: $green;
+       transition: 0.3s;
+     }
+   
+     .swiper-button-prev:hover,
+     .swiper-button-next:hover {
+       transform: scale(1.2);
+       text-shadow: 0 0 5px $green;
+     }
+   }
+ 
+   @media (min-width: 1000px){
+     .swiper {
+       max-width: 1400px;
+       width: 100%;
+       cursor: default;
+     }
+   
+     .plan {
+       width: 20vw;
+       max-width: 400px;
+     }
+   
+     .swiper-button-prev,
+     .swiper-button-next {
+       display: none;
+     }
+   }
+ }
