@@ -100,15 +100,17 @@
      }
    
      .swiper-pagination-bullet {
-       background: $orange;
+       background: $blue;
        border: 3px solid $green;
        width: 10px;
        height: 10px;
        transition: 0.3s;
+       opacity: 0.7;
      }
    
      .swiper-pagination-bullet-active {
        background: $green;
+       opacity: 1;
      }
    
      .swiper-button-prev,
@@ -121,23 +123,6 @@
      .swiper-button-next:hover {
        transform: scale(1.2);
        text-shadow: 0 0 5px $green;
-     }
-   }
- 
-   @media (min-width: 1060px){
-     .swiper {
-       max-width: 1400px;
-       width: 100%;
-     }
-   
-     .plan {
-       width: 350px;
-       max-width: 450px;
-     }
-   
-     .swiper-button-prev,
-     .swiper-button-next {
-       display: none;
      }
    }
  }

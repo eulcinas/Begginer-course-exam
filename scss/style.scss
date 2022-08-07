@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "variables";
 @import "general";
+@import "navbar";
 @import "header";
-@import "home";
 @import "social";
 @import "tabs";
 @import "midDark";
@@ -11,31 +11,4 @@
 @import "reviews";
 @import "contact";
 @import "footer";
-
-@media (max-width: 768px){
-   #burger {
-      display: block;
-   }
-
-   nav a {
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      height: 200px;
-      background: $dark;
-      padding-bottom: 20px;
-      z-index: -1;
-      box-shadow: 0 5px 5px grey;
-      transform: translateY(-100%);
-      opacity: 0;
-      transition: 0.3s;
-   }
-
-   .open {
-      transform: translateY(0%);
-      opacity: 1;
-   }
-}
+@import "media";

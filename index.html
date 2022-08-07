@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage</title>
+  
   <!-- CDN Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -16,26 +17,19 @@
 </head>
 
 <body>
-  <header>
-    <!-- <div class="headerLeft"> -->
-      <a href="#home">
-        <img id="logo1" src="app/images/logo.png" alt="logo-1">
-      </a>
-    <!-- </div> -->
-    <!-- <div class="headerRight"> -->
-      <nav>
-        <a href="#tabs">Features</a>
-        <a href="#midDark">About</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <nav>
+    <img id="logo" src="app/images/logo.png" alt="logo-1">
+    <div class="links">
+      <a href="#header">Features</a>
+      <a href="#midDark">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <i id="burger" class="fa-solid fa-bars"></i>
+  </nav>
 
-      <i id="burger" class="fa-solid fa-bars"></i>
-  <!-- </div> -->
-  </header>
-
-  <section id="home">
+  <section id="header">
     <div class="sectionLeft">
       <img src="app/images/logo.png" alt="logo-2">
       <h1>Explained propriety of out perpetual to you</h1>
@@ -348,6 +342,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- Custom swiper js -->
-<script src="swiper.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
