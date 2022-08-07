@@ -16,12 +16,23 @@
        width: 120px;
        height: 120px;
        background: $orange;
-       opacity: 0.6;
+       opacity: 0.5;
        font-size: 0.8em;
        margin-bottom: 30px;
        display: flex;
        justify-content: center;
        align-items: center;
+       transition: 0.5s;
+
+       h3 {
+        text-transform: uppercase;
+        transform: rotate(-45deg);
+       }
+     }
+
+     .box:hover{
+      opacity: 1;
+      cursor: pointer;
      }
    }
  
@@ -43,29 +54,55 @@
    }
  
    .img-box {
-     width: 30%;
-     height: auto;
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: 200px 200px;
-     gap: 10px;
+      width: 35%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      margin-top: 0;
+      position: relative;
  
      .image {
-      max-width: 350px;
-      display: grid;
+      max-width: 200px;
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
  
        img {
-         width: 100%;
+         width: 100%
        }
      }
- 
-     .img-box .image:nth-of-type(1){ 
-       grid-row: span 2;
-       grid-column: span 2;
+
+     .middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: $orange;
+      width: 100%;
+      height: 100%;
+      
      }
- 
-     .img-box .image:nth-of-type(2){
-       grid-row: span 2;
+
+     .image2 {
+      width: 400px;
+      height: 200px;
+
+      img {
+        width: 100%;
+      }
      }
+   }
+   .img-box:hover .image {
+    opacity: 0.3;
+   }
+
+   .img-box:hover .middle {
+    opacity: 1;
    }
  }

@@ -30,14 +30,15 @@
      /* Swiper css */
  
      .swiper {
+     max-width: 1200px;
+     height: auto;
      margin-top: 50px;
-     max-width: 350px;
-     width: 100%;
      text-align: center;
  
      .swiper-wrapper {
        display: flex;
        align-items: center;
+       margin: auto;
  
        .plan {
          width: 350px;
@@ -99,7 +100,7 @@
      }
    
      .swiper-pagination-bullet {
-       background: grey;
+       background: $orange;
        border: 3px solid $green;
        width: 10px;
        height: 10px;
@@ -123,16 +124,15 @@
      }
    }
  
-   @media (min-width: 1000px){
+   @media (min-width: 1060px){
      .swiper {
        max-width: 1400px;
        width: 100%;
-       cursor: default;
      }
    
      .plan {
-       width: 20vw;
-       max-width: 400px;
+       width: 350px;
+       max-width: 450px;
      }
    
      .swiper-button-prev,

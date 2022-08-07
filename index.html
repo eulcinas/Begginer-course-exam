@@ -17,20 +17,22 @@
 
 <body>
   <header>
-    <div class="headerLeft">
-      <a href="#home"><img id="logo1" src="app/images/logo.png" alt="logo-1"></a>
-    </div>
-    <div class="headerRight">
+    <!-- <div class="headerLeft"> -->
+      <a href="#home">
+        <img id="logo1" src="app/images/logo.png" alt="logo-1">
+      </a>
+    <!-- </div> -->
+    <!-- <div class="headerRight"> -->
       <nav>
         <a href="#tabs">Features</a>
         <a href="#midDark">About</a>
         <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
-
-        <!-- <i id="burger" class="fa-solid fa-bars-staggered"></i>  -->
       </nav>
-  </div>
+
+      <i id="burger" class="fa-solid fa-bars"></i>
+  <!-- </div> -->
   </header>
 
   <section id="home">
@@ -87,9 +89,9 @@
   <section id="tabs">
 
     <div class="box-box">
-      <div class="box">REGISTER</div>
-      <div class="box">APPLY</div>
-      <div class="box">RECEIVE</div>
+      <div class="box"><h3>register</h3></div>
+      <div class="box"><h3>apply</h3></div>
+      <div class="box"><h3>receive</h3></div>
     </div>
 
     <div class="text">
@@ -101,11 +103,15 @@
     <div class="img-box">
       <div class="image">        
         <img src="app/images/leaf.png" alt="leaf">
+              <div class="middle">
+        <div class="text">Explore</div>
+      </div>
+
       </div>
       <div class="image">
         <img src="app/images/salad.png" alt="salad">  
       </div>     
-      <div class="image">
+      <div class="image2">
         <img src="app/images/stairs.png" alt="stairs">
       </div>      
     </div>
@@ -244,8 +250,64 @@
 
   <section id="reviews">
     <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-    <div></div>
+    <div class="blue-line"></div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum unde magni hic officiis aperiam numquam quas repellat, tempore expedita nobis</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>Dantes Inf.</h4>
+              <p>Satan</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste ducimus minus dolores, a quaerat praesentium quibusdam ullam magnam. Soluta.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>Susan W.</h4>
+              <p>Photographer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
 
   <section id="contact">
@@ -260,10 +322,12 @@
         <li>            
           <input type="radio">
           <label for="personal">PERSONAL</label>
+
           <input type="radio">
-          <label for="company">COMPANY</label></li>
+          <label for="company">COMPANY</label>
+        </li>
+        <input type="submit" value="SEND">
       </ul>
-      <button>SEND</button>
     </form>
 
   </section>
@@ -274,7 +338,7 @@
       <img src="app/images/instagram.png" alt="instagram">
       <img src="app/images/twitter.png" alt="twitter">
       <img src="app/images/pinterest.png" alt="pinterest">
-      <img src="app/images/wifi.png" alt="rss">
+      <img src="app/images/rss.png" alt="rss">
     </div>
 
     <p>© 2019 Cheshire County</p>
@@ -284,6 +348,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- Custom swiper js -->
-<script src="script.js"></script>
+<script src="swiper.js"></script>
 </body>
 </html>

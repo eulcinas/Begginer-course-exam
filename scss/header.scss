@@ -1,42 +1,62 @@
 header {
-  background: $dark;
   max-width: 1400px;
   width: 100%;
   max-height: 80px;
   height: 100%;
+  background: $dark;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: auto;
+  padding: 0 40px;
+  line-height: 55px;
+  // margin: auto;
   position: fixed;
   top: 0;
   z-index: 999;
 
-  .headerLeft {
-    width: 40%;
-
-    #logo1 {
-      width: 20%;
-    }
+  #logo1 {
+    width: 30%;
+    padding-top: 20px;
   }
 
-  .headerRight {
-    width: 60%;
+  nav a {
+    // width: 60%;
+    height: 80px;
+    color: $white;
+    text-decoration: none;
+    // justify-content: space-between;
+    padding: 10px 20px;
+    opacity: 0.5;
+    transition: color 0.3s;
+  }
 
-    nav a {
-      width: 60%;
-      height: 80px;
-      color: $white;
-      text-decoration: none;
-      justify-content: space-between;
-      padding:0 20px;
-      opacity: 0.5;
-      transition: color 0.3s;
-    }
+  nav a:hover {
+    height: 80px;
+    border-bottom: 3px solid $orange;
+    opacity: 1;
+  }
 
-    nav a:hover {
-      opacity: 1;
-      border-bottom: 3px solid $orange;
-    }
+
+  .selected {
+    color: $orange;
+    height: 80px;
+    border-bottom: 3px solid $orange;
+  }
+
+  .rotate {
+    transform: scale(1.5) rotate(-90deg);
+  }
+
+  #burger {
+    color: $orange;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+  }
+
+  nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
   }
 }

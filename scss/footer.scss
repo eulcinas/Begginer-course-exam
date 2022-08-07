@@ -1,0 +1,30 @@
+footer {
+   width: 100%;
+   height: auto;
+   background: $dark;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px;
+ 
+   .imgLeft {
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+     padding: 0 50px;
+   }
+ 
+   img {
+     width: 3%;
+   }
+ 
+   p {
+     width: 30%;
+     color: $grey;
+   }
+ 
+   .imgLeft img:hover {
+     cursor: pointer;
+   }
+ }
