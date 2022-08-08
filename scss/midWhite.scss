@@ -1,5 +1,5 @@
 #midWhite {
-   width: 100%;
+   @include width-100;
    height: auto;
    background: $white;
    margin-top: 80px;
@@ -23,9 +23,7 @@
    }
  
    .wrapper-design{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     @include flex-center;
      gap: 40px;
      margin: 50px;
  

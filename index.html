@@ -39,28 +39,21 @@
     </div>
 
     <div class="sectionRight">
-      <form action="#">
+      <form action="#" autocomplete="off">
         <ul>     
           <h2>Try Your <span>FREE</span> Trial Today</h2>
           <h3>Your details</h3>
-          <li>
-            <input type="text" name="fname" placeholder="First name">
-          </li>
-          <li>
-            <input type="text" name="lname" placeholder="Last name">
-          </li>
-          <li>
-            <input type="text" name="phone" placeholder="Phone number">
-          </li>
+          <li><input id="input-name" type="text" placeholder="First name"></li>
+          <li><input id="input-surname" type="text" placeholder="Last name"></li>
+          <li><input id="input-phone" type="text" placeholder="Phone number"></li>
           <h3>Type of subscription</h3>
           <li>
             <input id="monthly" type="radio" name="sub" value="monthly">
             <label for="monthly">MONTHLY</label>
-  
             <input id="yearly" type="radio" name="sub" value="yearly">
             <label for="yearly">YEARLY</label>
           </li>
-          <input type="submit" value="GET STARTED">
+          <input id="submit-btn" type="submit" value="GET STARTED">
         </ul>
       </form>
     </div>
@@ -83,32 +76,73 @@
   <section id="tabs">
 
     <div class="box-box">
-      <div class="box"><h3>register</h3></div>
-      <div class="box"><h3>apply</h3></div>
-      <div class="box"><h3>receive</h3></div>
-    </div>
-
-    <div class="text">
-      <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
-    </div>
-
-    <div class="img-box">
-      <div class="image">        
-        <img src="app/images/leaf.png" alt="leaf">
-              <div class="middle">
-        <div class="text">Explore</div>
+      <div class="box">
+        <button id="tab-btn" onclick="changeTab(event, 'pirmas')">register</button>
       </div>
-
+      <div class="box">
+        <button id="tab-btn" onclick="changeTab(event, 'antras')">apply</button>
       </div>
-      <div class="image">
-        <img src="app/images/salad.png" alt="salad">  
-      </div>     
-      <div class="image2">
-        <img src="app/images/stairs.png" alt="stairs">
-      </div>      
+      <div class="box">
+        <button id="tab-btn" onclick="changeTab(event, 'trecias')">receive</button>
+      </div>
     </div>
+
+    <div class="tab-link" id="pirmas">
+      <div class="bendras">
+        <div class="text">
+          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
+        </div>
+    
+        <div class="img-box">
+          <div class="image">        
+            <img src="app/images/leaf.png" alt="leaf">
+          </div>
+          <div class="image">
+            <img src="app/images/salad.png" alt="salad">  
+          </div>     
+          <div class="image2">
+            <img src="app/images/stairs.png" alt="stairs">
+          </div>      
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tab-link" id="antras">
+      <div class="bendras">
+        <div class="text">
+          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
+        </div>
+    
+        <div class="img-box">
+          <div class="image3">
+            <img src="app/images/backpack.jpg" alt="backpack">
+          </div>      
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="tab-link" id="trecias">
+      <div class="bendras">
+        <div class="text">
+          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
+        </div>
+    
+        <div class="img-box">
+          <div class="image3">
+            <img src="app/images/transition.jpg" alt="transition">
+          </div>      
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section id="midDark">
@@ -308,19 +342,18 @@
     <h2>CONTACT US</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    <form action="#" method="get">
+    <form action="#" autocomplete="off">
       <ul>
-        <li><input type="text" placeholder="First Name"></li>
-        <li><input type="text" placeholder="Last Name"></li>
-        <li><input type="text" placeholder="Phone number"></li>
+        <li><input id="input-name2" type="text" placeholder="First Name"></li>
+        <li><input id="input-surname2" type="text" placeholder="Last Name"></li>
+        <li><input id="input-phone2" type="text" placeholder="Phone number"></li>
         <li>            
           <input type="radio">
           <label for="personal">PERSONAL</label>
-
           <input type="radio">
           <label for="company">COMPANY</label>
         </li>
-        <input type="submit" value="SEND">
+        <input id="submit-btn2" type="submit" value="SEND">
       </ul>
     </form>
 

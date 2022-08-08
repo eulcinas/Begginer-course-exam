@@ -1,0 +1,34 @@
+@mixin max-width {
+   max-width: 1400px;
+}
+
+@mixin width-100 {
+   width: 100%;
+}
+
+@mixin margin-auto {
+   margin: auto;
+}
+
+@mixin center-text {
+   text-align: center;
+}
+
+@mixin nav-height {
+   height: 80px;
+}
+
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin flex-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+@mixin cursor {
+   cursor: pointer;
+}

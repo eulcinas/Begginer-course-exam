@@ -10,13 +10,13 @@ burger.addEventListener("click", function(){
 })
 
 window.addEventListener("resize", function(){
-  if(this.window.innerWidth > 768){
+  if(window.innerWidth > 768){
     burger.classList.toggle("rotate")
     links.classList.toggle("open")
   }
 })
 
-const sections =document.querySelectorAll("section")
+const sections = document.querySelectorAll("section")
 window.addEventListener("scroll", function(){
   let current = ""
   for(var section of sections){
@@ -26,6 +26,7 @@ window.addEventListener("scroll", function(){
     }
   }
 
+  console.log(current)
   for(var anchor of anchors){
     anchor.classList.remove("selected")
     if(anchor.getAttribute("href") === "#" + current){
@@ -37,7 +38,97 @@ window.addEventListener("scroll", function(){
 anchors[0].classList.add("selected")
 
 
-/* COMMENTS SWIPER */
+
+/* input alert */
+
+const submitBtn = document.getElementById("submit-btn")
+
+const validate = (e) => {
+  e.preventDefault();
+  const inputName = document.getElementById("input-name")
+  const inputSurname = document.getElementById("input-surname")
+  const inputPhone = document.getElementById("input-phone")
+  
+  if (inputName.value === ""){
+    alert("Įveskite vardą")
+    inputName.focus()
+    return false
+    // inputName.value = "";
+  }
+  if (inputSurname.value === ""){
+    alert("Įveskite pavardę")
+    inputSurname.focus()
+    return false
+    // inputSurname.value = ""
+  }
+  if (inputPhone.value === ""){
+    alert("Įveskite telefono numerį")
+    inputPhone.focus()
+    return false
+    // inputPhone.value = ""
+  }
+  return ture
+}
+submitBtn.addEventListener("click", validate);
+
+/* second contacts form */
+
+const submitBtn2 = document.getElementById("submit-btn2")
+
+const validate2 = (e) => {
+  e.preventDefault();
+  const inputName2 = document.getElementById("input-name2")
+  const inputSurname2 = document.getElementById("input-surname2")
+  const inputPhone2 = document.getElementById("input-phone2")
+
+  if (inputName2.value === ""){
+    alert("Įveskite vardą")
+    inputName2.focus()
+    return false
+    // inputName.value = "";
+  }
+  if (inputSurname2.value === ""){
+    alert("Įveskite pavardę")
+    inputSurname2.focus()
+    return false
+    // inputSurname.value = ""
+  }
+  if (inputPhone2.value === ""){
+    alert("Įveskite telefono numerį")
+    inputPhone2.focus()
+    return false
+    // inputPhone.value = ""
+  }
+  return ture
+}
+submitBtn2.addEventListener("click", validate2);
+
+
+/* TAB */
+
+const tabsBox = document.getElementsByClassName("tab-link")
+const buttons = document.getElementById("tab-btn")
+
+for(var x of tabsBox){
+  x.style.display = "none"
+}
+
+function changeTab(event, name){
+
+  for(var x of tabsBox){
+    x.style.display = "none"
+  }
+  document.getElementById(name).style.display = "block"
+
+  for(var x of buttons){
+    x.classList.remove("selected")
+  }
+  event.currentTarget.classList.add("selected")
+}
+
+
+
+/* SWIPER for pricing and comments */
 
  const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -57,11 +148,11 @@ anchors[0].classList.add("selected")
   },
 
   breakpoints: {
-   1060: {
-     slidesPerView: 3,
-     slidesPerGroup: 3,
-     allowSlidePrev: true,
-     allowSlideNext: true,
-   }
+  1060: {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    allowSlidePrev: true,
+    allowSlideNext: true,
+  }
  }
 });

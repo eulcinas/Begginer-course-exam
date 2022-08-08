@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  max-width: 1400px;
+  @include max-width;
   background: $white;
-  text-align: center;
+  @include center-text;
   margin: auto;
 }

@@ -2,7 +2,7 @@
    #pricing {
       .swiper {
        max-width: 1400px;
-       width: 100%;
+       @include width-100;
       }
    
       .plan {
@@ -19,7 +19,7 @@
    #reviews {
       .swiper {
          max-width: 1200px;
-         width: 100%;
+         @include width-100;
       }
      
       .plan {
@@ -37,37 +37,35 @@
 @media (min-width: 768px) and (max-width: 1060px){
    #header {
       flex-direction: column;
-      width: 100%;
+      @include width-100;
 
       .sectionLeft {
-         width: 100%;
-         margin: auto;
+         @include width-100;
+         @include margin-auto;
          text-align: center;
 
          h1 {
-            margin: auto;
+            @include margin-auto;
          }
 
          .white-line {
-            margin: auto;
+            @include margin-auto;
             margin-bottom: 20px;
          }
 
          p {
             width: 90%;
-            margin: auto;
+            @include margin-auto;
             padding: 0;
          }
       }
 
       .sectionRight {
-         width: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+         @include width-100;
+         @include flex-center;
 
          form {
-            margin: auto;
+            @include margin-auto;
             margin-top: 10px;
          }
       }
@@ -78,13 +76,13 @@
    }
 
    #tabs {
-      width: 100%;
+      @include width-100;
       height: auto;
       flex-direction: column;
       padding: 30px 0;
 
       .box-box {
-         width: 100%;
+         @include width-100;
          height: auto;
          display: flex;
          justify-content: space-evenly;
@@ -98,20 +96,40 @@
          }
       }
 
-      .text {
-         width: 100%;
-         padding: 0 30px;
+      .tab-link {
+         width: 80%;
+         margin: auto;
 
-         h2 {
-            font-size: 1.5em;
+         .bendras {
+            flex-wrap: wrap;
+            
+            .text {
+               @include width-100;
+               height: auto;
+               padding: 0 30px;
+
+               h2 {
+                  font-size: 1.5em;
+               }
+            }
+
+            .img-box {
+               @include width-100;
+               justify-content: center;
+               align-items: center;
+
+               .image {
+                  margin-top: 40px;
+               }
+
+               .image3 {
+                  height: auto;
+                  margin-top: 40px;
+               }
+            }
          }
       }
 
-      .img-box {
-         width: 100%;
-         justify-content: center;
-         align-items: center;
-      }
    }
 
    #midDark {
@@ -131,14 +149,13 @@
       }
 
       .items-right {
-         width: 100%;
+         @include width-100;
          height: auto;
-         // margin: auto;
          text-align: center;
 
          h2 {
             text-align: center;
-            width: 100%;
+            @include width-100;
          }
 
          .orangeLine {
@@ -156,7 +173,6 @@
             margin: auto;
             padding: 5px;
             flex-direction: column;
-            // margin: 0;
 
             h4 {
                padding-top: 10px;
@@ -194,7 +210,7 @@
       }
       .swiper {
          max-width: 1150px;
-         width: 100%;
+         @include width-100;
          margin: auto;
       }
      
@@ -243,7 +259,7 @@
          position: absolute;
          top: 60px;
          left: 0;
-         width: 100%;
+         @include width-100;
          height: auto;
          background: $dark;
          padding-bottom: 20px;
@@ -251,8 +267,7 @@
          box-shadow: 0 3px 3px $orange;
          transform: translateY(-100%);
          opacity: 0;
-         transition: 0.3s;
-         text-align: center;
+         transition: 0.5s;
       }
    
       .open {
@@ -261,17 +276,17 @@
       }
    
       a {
-         text-align: center;
          width: auto;
       }
    }
 
    #header {
       flex-direction: column;
-      width: 100%;
+      @include width-100;
+      height: 100vh;
 
       .sectionLeft {
-         width: 100%;
+         @include width-100;
          margin: auto;
          text-align: center;
 
@@ -292,10 +307,8 @@
       }
 
       .sectionRight {
-         width: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+         @include width-100;
+         @include flex-center;
 
          form {
             margin: auto;
@@ -309,13 +322,13 @@
    }
 
    #tabs {
-      width: 100%;
+      @include width-100;
       height: auto;
       flex-direction: column;
       padding: 30px 0;
 
       .box-box {
-         width: 100%;
+         @include width-100;
          height: auto;
          display: flex;
          justify-content: space-evenly;
@@ -329,61 +342,76 @@
          }
       }
 
-      .text {
-         width: 100%;
-         padding: 0 30px;
-         height: auto;
-         margin-bottom: 10px;
+      .tab-link {
+         width: 80%;
+         margin: auto;
 
-         h2 {
-            font-size: 1.2em;
-         }
+         .bendras {
+            flex-wrap: wrap;
 
-         p {
-            overflow: auto;
+            .text {
+               @include width-100;
+               padding: 0 30px;
+               height: auto;
+               margin-bottom: 10px;
+
+               h2 {
+                  font-size: 1.2em;
+               }
+
+               p {
+                  overflow: auto;
+               }
+            }
+
+            .img-box {
+               justify-content: center;
+               align-items: center;
+               padding-top: 30px;
+
+               .image {
+                  width: 50%;
+               }
+
+               .image2 {
+                  @include width-100;
+               }
+
+               .image3 {
+                  height: auto;
+                  margin-bottom: 40px;
+
+                  img {
+                     width: 100%;
+                  }
+               }
+            }
          }
       }
 
-      .img-box {
-         justify-content: center;
-         align-items: center;
-         padding-top: 30px;
-
-         .image {
-            width: 50%;
-         }
-
-         .image2 {
-            width: 100%;
-         }
-      }
    }
 
    #midDark {
       flex-direction: column;
-      height: auto;
+      height: 100vh;
       margin: auto;
-      padding-top: 30px;
-      padding-bottom: 30px;
 
       .logo-left {
          margin: auto;
-         padding-bottom: 30px;
 
          img {
-            width: 50%;
+            width: 60%;
          }
       }
 
       .items-right {
-         width: 100%;
+         @include width-100;
          height: auto;
-         // margin: auto;
+         margin: auto;
          text-align: center;
 
          h2 {
-            text-align: center;
-            width: 100%;
+            @include width-100;
          }
 
          .orangeLine {
@@ -397,11 +425,10 @@
          }
 
          .wrapper {
-            width: 50%;
-            margin: auto;
+            width: 60%;
+            @include margin-auto;
             padding: 5px;
             flex-direction: column;
-            // margin: 0;
 
             h4 {
                padding-top: 10px;
@@ -439,7 +466,7 @@
       }
       .swiper {
          max-width: 1150px;
-         width: 100%;
+         @include width-100;
          margin: auto;
       }
      
@@ -459,9 +486,13 @@
       margin: auto;
       height: auto;
 
+      h2 {
+         font-size: 1.5em;
+         padding-top: 50px;
+      }
+
       .swiper {
-         height: 350px;
-         margin: auto;
+         height: 400px;
       }
      
       .plan {
@@ -482,12 +513,12 @@
       .imgLeft {
          padding: 0 10px;
          img {
-            width: 15%;
+            width: 10%;
          }
       }
 
       p {
-         font-size: 0.6em;
+         font-size: 0.8em;
       }
    }
 }

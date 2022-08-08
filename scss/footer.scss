@@ -1,17 +1,14 @@
 footer {
-   width: 100%;
+   @include width-100;
    height: auto;
    background: $dark;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   @include flex-center;
    padding: 30px;
  
    .imgLeft {
      width: 50%;
-     display: flex;
-     justify-content: space-between;
-     margin: auto;
+     @include flex-between;
+     @include margin-auto;
      padding: 0 50px;
 
      img {
@@ -25,6 +22,6 @@ footer {
    }
  
    .imgLeft img:hover {
-     cursor: pointer;
+     @include cursor;
    }
  }

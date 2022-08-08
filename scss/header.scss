@@ -1,6 +1,6 @@
 #header {
-  width: 100%;
-  height: auto;
+   @include width-100;
+   height: auto;
    background: rgba(0, 0, 0, 0.5) url('../images/city2.png');
    background-blend-mode: darken;
    height: auto;
@@ -40,7 +40,7 @@
      }
  
      p {
-       width: 100%;
+       @include width-100;
        padding-right: 50px;
      }
  
@@ -50,7 +50,7 @@
        background-color: transparent;
        background-repeat: no-repeat;
        border: 3px solid $white;
-       cursor: pointer;
+       @include cursor;
        overflow: hidden;
        color: $white;
        text-transform: uppercase;
@@ -63,7 +63,7 @@
 
       form {
         max-width: 340px;
-        width: 100%;
+        @include width-100;
         height: auto;
         background: $white;
         color: $black;
@@ -140,12 +140,12 @@
           }
 
           input[type="submit"]{
-            width: 100%;
+            @include width-100;
             height: 50px;
             border: none;
             background: $green;
             color: $white;
-            cursor: pointer;
+            @include cursor;
             font-weight: 500;
             font-size: 1em;
             transition: 0.3s;

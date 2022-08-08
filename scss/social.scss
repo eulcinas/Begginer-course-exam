@@ -1,10 +1,10 @@
 #social {
-   width: 100%;
+   @include width-100;
    height: auto;
    background: $white;
    display: flex;
    align-items: center;
-   margin: auto;
+   @include margin-auto;
  
    .socialLeft {
      width: 50%;
@@ -17,7 +17,7 @@
      }
  
      p {
-      width: 100%;
+      @include width-100;
       height: auto;
        padding-bottom: 10px;
        font-size: 0.8em;
@@ -28,13 +28,12 @@
  
    .socialRight {
      width: 50%;
-     display: flex;
-     justify-content: space-between;
-     margin: auto;
+     @include flex-between;
+     @include margin-auto;
  
      img {
        width: 6%;
-       margin: auto;
+       @include margin-auto;
      }
    }
  }

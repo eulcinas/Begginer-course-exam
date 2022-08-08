@@ -1,5 +1,5 @@
 #pricing {
-   width: 100%;
+   @include width-100;
    height: auto;
    background: $blue;
    padding-top: 80px;
@@ -90,7 +90,6 @@
              font-size: 0.8em;
            }
          }
- 
        }
      }
  
