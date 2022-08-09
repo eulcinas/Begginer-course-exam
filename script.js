@@ -53,21 +53,22 @@ const validate = (e) => {
     alert("Įveskite vardą")
     inputName.focus()
     return false
-    // inputName.value = "";
   }
   if (inputSurname.value === ""){
     alert("Įveskite pavardę")
     inputSurname.focus()
     return false
-    // inputSurname.value = ""
   }
   if (inputPhone.value === ""){
     alert("Įveskite telefono numerį")
     inputPhone.focus()
     return false
-    // inputPhone.value = ""
   }
-  return ture
+  inputName.value = "";
+  inputSurname.value = ""
+  inputPhone.value = ""
+  return true
+
 }
 submitBtn.addEventListener("click", validate);
 
@@ -85,21 +86,22 @@ const validate2 = (e) => {
     alert("Įveskite vardą")
     inputName2.focus()
     return false
-    // inputName.value = "";
   }
   if (inputSurname2.value === ""){
     alert("Įveskite pavardę")
     inputSurname2.focus()
     return false
-    // inputSurname.value = ""
   }
   if (inputPhone2.value === ""){
     alert("Įveskite telefono numerį")
     inputPhone2.focus()
     return false
-    // inputPhone.value = ""
   }
-  return ture
+  inputName2.value = "";
+  inputSurname2.value = ""
+  inputPhone2.value = ""
+  return true
+
 }
 submitBtn2.addEventListener("click", validate2);
 

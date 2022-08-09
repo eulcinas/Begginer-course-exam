@@ -45,7 +45,7 @@
           <h3>Your details</h3>
           <li><input id="input-name" type="text" placeholder="First name"></li>
           <li><input id="input-surname" type="text" placeholder="Last name"></li>
-          <li><input id="input-phone" type="text" placeholder="Phone number"></li>
+          <li><input id="input-phone" type="number" placeholder="Phone number"></li>
           <h3>Type of subscription</h3>
           <li>
             <input id="monthly" type="radio" name="sub" value="monthly">
@@ -113,8 +113,8 @@
     <div class="tab-link" id="antras">
       <div class="bendras">
         <div class="text">
-          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
+          <h2>Randomn text on the second tab 🥾</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt.</p><br>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
         </div>
     
@@ -130,9 +130,10 @@
     <div class="tab-link" id="trecias">
       <div class="bendras">
         <div class="text">
-          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <h2>Randomn text on the third tab 🧠</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi in at inventore quod alias est magni sapiente nesciunt tempore ullam qui repellendus, libero, aliquid omnis corrupti aliquam temporibus ad.</p><br>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores numquam dolor laudantium illum amet officia provident cum aspernatur dicta et!</p><br>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
     
         <div class="img-box">
@@ -318,12 +319,100 @@
         </div>
 
         <div class="swiper-slide">
-          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolorem fuga similique perferendis quo fugiat soluta?</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta maiores dolorem numquam facilis eaque qui aut distinctio pariatur unde, consequatur fuga voluptates saepe beatae. Facere eos, repellendus perspiciatis commodi error rem explicabo magni exercitationem inventore mollitia ab ullam doloribus!</p>
           <div class="avatar-box">
             <div class="avatar"></div>
             <div class="avatar-text">
               <h4>Susan W.</h4>
               <p>Photographer</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum unde magni hic officiis aperiam numquam quas repellat, tempore expedita nobis</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>Dantes Inf.</h4>
+              <p>Satan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste ducimus minus dolores, a quaerat praesentium quibusdam ullam magnam. Soluta.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>Jeremy H.</h4>
+              <p>Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem, ipsum.</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel itaque explicabo autem unde illo. Ad, voluptatem. Architecto facere a eaque!</p>
+          <div class="avatar-box">
+            <div class="avatar"></div>
+            <div class="avatar-text">
+              <h4>John S.</h4>
+              <p>Freelancer</p>
             </div>
           </div>
         </div>
@@ -346,7 +435,8 @@
       <ul>
         <li><input id="input-name2" type="text" placeholder="First Name"></li>
         <li><input id="input-surname2" type="text" placeholder="Last Name"></li>
-        <li><input id="input-phone2" type="text" placeholder="Phone number"></li>
+        <li><input id="input-phone2" type="number" min="0" oninput="this.value = 
+          !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" placeholder="Phone number"></li>
         <li>            
           <input type="radio">
           <label for="personal">PERSONAL</label>
