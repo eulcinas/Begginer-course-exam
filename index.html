@@ -45,7 +45,8 @@
           <h3>Your details</h3>
           <li><input id="input-name" type="text" placeholder="First name"></li>
           <li><input id="input-surname" type="text" placeholder="Last name"></li>
-          <li><input id="input-phone" type="number" placeholder="Phone number"></li>
+          <li><input id="input-phone" type="number" min="0" oninput="this.value = 
+            !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" placeholder="Phone number"></li>
           <h3>Type of subscription</h3>
           <li>
             <input id="monthly" type="radio" name="sub" value="monthly">
@@ -372,7 +373,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="swiper-slide">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum unde magni hic officiis aperiam numquam quas repellat, tempore expedita nobis</p>
           <div class="avatar-box">
