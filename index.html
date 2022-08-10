@@ -438,10 +438,10 @@
         <li><input id="input-surname2" type="text" placeholder="Last Name"></li>
         <li><input id="input-phone2" type="number" min="0" oninput="this.value = 
           !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" placeholder="Phone number"></li>
-        <li>            
-          <input type="radio">
+        <li>
+          <input id="personal" type="radio" name="sub" value="personal">
           <label for="personal">PERSONAL</label>
-          <input type="radio">
+          <input id="company" type="radio" name="sub" value="company">
           <label for="company">COMPANY</label>
         </li>
         <input id="submit-btn2" type="submit" value="SEND">

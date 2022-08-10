@@ -136,7 +136,6 @@ function changeTab(event, name){
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  spaceBetween: 10,
 
   // If we need pagination
   pagination: {
@@ -155,6 +154,7 @@ function changeTab(event, name){
     slidesPerGroup: 3,
     allowSlidePrev: true,
     allowSlideNext: true,
+    // loop: false,
   }
  }
 });
